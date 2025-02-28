@@ -1,0 +1,22 @@
+body {
+    color: #333;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode',  sans-serif;
+}
+
+h1 {
+    background-image: url(../img/sobre-background.jpg);
+}
+
+h2 {
+    border-bottom: 2px groove #333;
+}
+
+figure {
+    background-color: #F2EDED;
+    border: 1px solid #CCC;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
