@@ -1,31 +1,47 @@
+:root{
+    --color-base: #040200; 
+    --color-base-figure-background: #f7f7f7;
+    --color-base-figure-border: #cfc5c5;
+    --font-base: "Roboto", sans-serif;
+    --font-base-weigth: 300;
+    --font-first-title: "Playfair Display", serif;
+    --font-first-title-weigth: 700;
+}
+
 body {
-    color: #333;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode',  sans-serif;
+    color: var(--color-base);
+    font-family: var(--font-base);
+    font-weight: var(--font-base-weigth);
     margin-left: auto;
     margin-right: auto;
-    width: 940px;
+    width: 940px;    
 }
 
 h1 {
     background-image: url(../img/sobre-background.jpg);
     padding: 10px;
+    font-family: var(--font-first-title);
+    font-weight: var(--font-first-title-weigth);
 }
 
 h2 {
-    border-bottom: 2px groove #333;
+    border-bottom: 2px groove var(--color-base);
     margin-top: 30px;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
 }
 
 figure {
-    background-color: #F2EDED;
-    border: 1px solid #CCC;
+    background-color:var(--color-base-figure-background);
+    border: 1px solid var(--color-base-figure-border);
     text-align: center;
     padding: 15px;
     margin: 30px;
 }
 
 figcaption {
-    font-style: italic;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
     margin-top: 10px;
 }
 
