@@ -62,13 +62,13 @@ p {
     width: 550px;    
 }
 
-#rodape {
+footer {
     margin: 30px 0;
     padding: 30px 0;
     color: var(--color-base-footer);
 }
 
-#rodape img {
+footer img {
     margin-right: 30px;
     vertical-align: middle;
     width: 94px;
