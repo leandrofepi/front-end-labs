@@ -1,0 +1,32 @@
+/* CSS Reset Mínimo - Remove completamente estilos padrão do navegador */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  img, video {
+    max-width: 100%;
+    display: block;
+  }
+  
+  button, input, textarea, select {
+    font: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
