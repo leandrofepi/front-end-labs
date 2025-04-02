@@ -1,29 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
-</head>
-<body>
-    <header>
-        <h1>Faça seu cadastro!</h1> 
-        <h2>Compre on-line</h2>   
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=sell"
+    />
+  </head>
+  <body>
+    <header class="grid-header-container">
+      <div>
+        <h1>Faça seu cadastro!</h1>
+        <h2>
+          Compre on-line <i class="material-symbols-outlined"> sell </i>
+        </h2>
+      </div>
+      <div>
+        <img src="img/icone_cadastro.jpg" alt="Ícone de Cadastro" />
+      </div>
     </header>
     <form action="">
-      <fieldset>
+      <fieldset class="flex-container">
         <legend>Dados Pessoais</legend>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" required />
+        <label for="email">E-mail</label>
+        <input type="email" name="email" required />
+        <label for="dataNascimento">Data Nascimento</label>
+        <input type="date" name="dataNascimento" />
+        <label for="cpf">CPF</label>
+        <input
+          type="text"
+          pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+          name="cpf"
+          placeholder="000.000.000-00"
+          required
+        />
       </fieldset>
-      <fieldset>
+      <fieldset class="flex-container">
         <legend>Endereço</legend>
+        <label for="rua">Rua</label>
+        <input type="text" name="rua" required />
+        <label for="numero">Número</label>
+        <input type="number" name="numero" />
+        <label for="bairro">Bairro</label>
+        <input type="text" name="bairro" />
+        <label for="cep">CEP</label>
+        <input
+          type="text"
+          pattern="\d{5}-\d{3}"
+          name="cep"
+          placeholder="00000-000"
+          required
+        />
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" />
+        <label for="estado">Estado</label>
+        <select name="estado">
+          <option value="" selected>Selecione um estado</option>
+          <option value="ac">Acre</option>
+          <option value="al">Alagoas</option>
+          <option value="am">Amazonas</option>
+          <option value="ap">Amapá</option>
+          <option value="ba">Bahia</option>
+          <option value="ce">Ceará</option>
+          <option value="df">Distrito Federal</option>
+          <option value="es">Espírito Santo</option>
+          <option value="go">Goiás</option>
+          <option value="ma">Maranhão</option>
+          <option value="mt">Mato Grosso</option>
+          <option value="ms">Mato Grosso do Sul</option>
+          <option value="mg">Minas Gerais</option>
+          <option value="pa">Pará</option>
+          <option value="pb">Paraíba</option>
+          <option value="pr">Paraná</option>
+          <option value="pe">Pernambuco</option>
+          <option value="pi">Piauí</option>
+          <option value="rj">Rio de Janeiro</option>
+          <option value="rn">Rio Grande do Norte</option>
+          <option value="ro">Rondônia</option>
+          <option value="rs">Rio Grande do Sul</option>
+          <option value="rr">Roraima</option>
+          <option value="sc">Santa Catarina</option>
+          <option value="se">Sergipe</option>
+          <option value="sp">São Paulo</option>
+          <option value="to">Tocantins</option>
+        </select>
       </fieldset>
-      <fieldset>
+      <fieldset class="flex-container">
         <legend>Login</legend>
-      </fieldset>  
-      <div>
-        <input type="reset" value="Cancelar">
-        <input type="submit" value="Enviar">
+        <label for="avatar">Imagem de Perfil</label>
+        <input
+          type="file"
+          name="avatar"
+          accept="image/*"
+          title="Apenas JPEG, PNG, BMP, WEBP ou GIF."
+        />
+        <label for="login">Login</label>
+        <input type="text" name="login" />
+        <label for="senha">Senha</label>
+        <input type="password" minlength="8" name="senha" required />
+        <label for="confimaSenha">Confirme a senha</label>
+        <input type="password" minlength="8" name="confimaSenha" required />
+      </fieldset>
+      <div class="grid-button-container">
+        <input type="reset" value="Cancelar" />
+        <input type="submit" value="Enviar" />
       </div>
     </form>
-</body>
+  </body>
 </html>
