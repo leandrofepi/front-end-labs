@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #202298;
+    --secondary-color: #e1551d;
+    --background-color: #F9F9F9;
+    --text-button-color: white;
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --font-size-medium: medium;
+    --font-size-large: large;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: var(--font-family);
+}
+
+fieldset {
+    margin-bottom: 10px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+fieldset input, select {
+    font-size: var(--font-size-medium);
+}
+
+.grid-button-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5px 0;
+    border-bottom: black 5px solid;
+}
+
+.grid-button-container input {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    color: var(--text-button-color);
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.grid-button-container input[type=submit] {
+    background-color: var(--primary-color);
+}
+
+.grid-button-container input[type=reset] {
+    background-color: var(--secondary-color);
+}
+
+.grid-button-container input:focus{
+    outline: 2px solid black;
+}
+
+.grid-header-container {
+    display: grid;
+    grid-template-areas: 'top-left top-right';
+    border-bottom: black 5px solid;
+    margin-bottom: 5px;
+}
+
+.top-left {
+    grid-area: top-left;
+    justify-self: left;
+}
+
+.top-right {
+    grid-area: top-right;
+    justify-self: right;
+}
+
+i {
+    vertical-align: middle;
+}
+
+h1, h2 {
+    font-size: var(--font-size-large);
+}
