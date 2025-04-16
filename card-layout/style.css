@@ -99,3 +99,27 @@ ul li {
 ul > li:first-child {
     font-weight: 500;
 }
+
+.card button {
+  display: grid;
+  place-items: center;
+  min-width: 200px;
+  padding: 10px 0;
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  transition: background 0.3s, color 0.3 ease;
+  cursor: pointer;
+}
+
+.alert {
+  border: 2px solid var(--color-alert);
+}
+
+.card:hover button {
+  color: var(--color-light);
+  background: rgba(15, 113, 255, 0.5);
+}
