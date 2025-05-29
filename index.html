@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Laboratórios Front-End</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 1rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card .technologies {
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .project-card .technologies strong {
+            color: #333;
+        }
+
+        .project-card .technologies span {
+            background-color: #e9ecef;
+            color: #007bff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            margin-right: 0.3rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 0.3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfólio de Laboratórios de Front-End</h1>
+    </header>
+
+    <div class="container">
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <h3>1. Card Layout</h3>
+                <p>Este projeto explora a criação de layouts responsivos utilizando o conceito de cards. Ideal para exibir informações de forma organizada e visualmente agradável.</p>
+                <div class="technologies">
+                    <strong>Tecnologias:</strong>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                </div>
+
+            <div class="project-card">
+                <h3>2. Change Theme</h3>
+                <p>Uma demonstração prática de como implementar a funcionalidade de troca de temas (por exemplo, tema claro e escuro) em uma aplicação web, melhorando a experiência do usuário.</p>
+                <div class="technologies">
+                    <strong>Tecnologias:</strong>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                </div>
+
+            <div class="project-card">
+                <h3>3. Form HTML</h3>
+                <p>Laboratório focado na construção e estilização de formulários HTML. Abrange elementos de formulário, validações básicas e boas práticas de usabilidade.</p>
+                <div class="technologies">
+                    <strong>Tecnologias:</strong>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                </div>
+
+            <div class="project-card">
+                <h3>4. Simple HTML</h3>
+                <p>Um projeto introdutório que apresenta a estrutura básica de uma página HTML, seus principais elementos e semântica.</p>
+                <div class="technologies">
+                    <strong>Tecnologias:</strong>
+                    <span>HTML</span>
+                </div>
+                </div>
+
+            <div class="project-card">
+                <h3>5. Virtual Phone</h3>
+                <p>Projeto criativo que simula a interface e algumas funcionalidades básicas de um telefone virtual, utilizando tecnologias web.</p>
+                <div class="technologies">
+                    <strong>Tecnologias:</strong>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Leandro Fepi - Laboratórios de Front-End. Disciplina de Programação Front-End [TADS].</p>
+    </footer>
+
+    <script>
+        // Simples script para atualizar o ano no rodapé dinamicamente
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
