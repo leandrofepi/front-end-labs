@@ -40,7 +40,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-wrap: wrap; /* Para responsividade em telas menores */
+            flex-wrap: wrap;
             background-color: #fff;
             padding: 2rem;
             border-radius: 8px;
@@ -108,12 +108,12 @@
         }
 
         .social-links svg {
-            margin-right: 8px; /* Espaço entre o ícone e o texto */
+            margin-right: 8px;
             width: 20px;
             height: 20px;
         }
 
-
+        /* Grade de Projetos */
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -157,10 +157,6 @@
             margin-bottom: 1rem;
         }
 
-        .project-card .technologies strong {
-            color: #333;
-        }
-
         .project-card .technologies span {
             background-color: #e9ecef;
             color: #007bff;
@@ -187,6 +183,53 @@
         .project-link:hover {
             background-color: #0056b3;
         }
+        
+        /* Seção de Tópicos da Disciplina */
+        .course-topics {
+            margin-top: 4rem;
+            padding: 2.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .course-topics h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .topic-card {
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        .topic-card h3 {
+            margin-top: 0;
+            color: #007bff;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .topic-card ul {
+            list-style-type: '✓  ';
+            padding-left: 20px;
+            color: #333;
+        }
+
+        .topic-card ul li {
+            margin-bottom: 0.75rem;
+        }
 
         footer {
             text-align: center;
@@ -194,13 +237,20 @@
             background-color: #333;
             color: #fff;
             margin-top: 3rem;
-            font-size: 0.9rem;
         }
+
+        .footer-credit {
+            font-size: 0.8em;
+            color: #ccc;
+            margin-top: 8px;
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Portfólio de Laboratórios de Front-End</h1>
+        <h1>Portfólio dos Laboratórios da Disciplina Programação Front-End</h1>
+        <h2>3º/4ºp. Tecnologia em Análise e Desenvolvimento de Sistemas</h2>
     </header>
 
     <div class="container">
@@ -236,63 +286,70 @@
             <div class="project-card">
                 <h3>1. Card Layout</h3>
                 <p>Este projeto explora a criação de layouts responsivos utilizando o conceito de cards. Ideal para exibir informações de forma organizada e visualmente agradável.</p>
-                <div class="technologies">
-                    <strong>Tecnologias:</strong>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                </div>
+                <div class="technologies"><strong>Tecnologias:</strong> <span>HTML</span> <span>CSS</span></div>
                 <a href="https://github.com/leandrofepi/front-end-labs/tree/main/card-layout" target="_blank" class="project-link">Ver Projeto</a>
             </div>
-
             <div class="project-card">
                 <h3>2. Change Theme</h3>
-                <p>Uma demonstração prática de como implementar a funcionalidade de troca de temas (por exemplo, tema claro e escuro) em uma aplicação web, melhorando a experiência do usuário.</p>
-                <div class="technologies">
-                    <strong>Tecnologias:</strong>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
+                <p>Uma demonstração prática de como implementar a funcionalidade de troca de temas (claro/escuro), melhorando a experiência do usuário.</p>
+                <div class="technologies"><strong>Tecnologias:</strong> <span>HTML</span> <span>CSS</span> <span>JavaScript</span></div>
                 <a href="https://github.com/leandrofepi/front-end-labs/tree/main/change-theme" target="_blank" class="project-link">Ver Projeto</a>
             </div>
-
             <div class="project-card">
                 <h3>3. Form HTML</h3>
-                <p>Laboratório focado na construção e estilização de formulários HTML. Abrange elementos de formulário, validações básicas e boas práticas de usabilidade.</p>
-                <div class="technologies">
-                    <strong>Tecnologias:</strong>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                </div>
+                <p>Laboratório focado na construção e estilização de formulários HTML, cobrindo elementos, validações e boas práticas de usabilidade.</p>
+                <div class="technologies"><strong>Tecnologias:</strong> <span>HTML</span> <span>CSS</span></div>
                 <a href="https://github.com/leandrofepi/front-end-labs/tree/main/form-html" target="_blank" class="project-link">Ver Projeto</a>
             </div>
-
             <div class="project-card">
                 <h3>4. Simple HTML</h3>
-                <p>Um projeto introdutório que demonstra a criação de uma página institucional "Sobre Nós". Cobre a estrutura básica de uma página HTML, seus principais elementos e a organização de conteúdo.</p>
-                <div class="technologies">
-                    <strong>Tecnologias:</strong>
-                    <span>HTML</span>
-                </div>
+                <p>Um projeto introdutório que demonstra a criação de uma página institucional "Sobre Nós", cobrindo a estrutura e semântica do HTML.</p>
+                <div class="technologies"><strong>Tecnologias:</strong> <span>HTML</span></div>
                 <a href="https://github.com/leandrofepi/front-end-labs/tree/main/simple-html" target="_blank" class="project-link">Ver Projeto</a>
             </div>
-
             <div class="project-card">
                 <h3>5. Virtual Phone</h3>
                 <p>Projeto criativo que simula a interface e algumas funcionalidades básicas de um telefone virtual, utilizando tecnologias web.</p>
-                <div class="technologies">
-                    <strong>Tecnologias:</strong>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
+                <div class="technologies"><strong>Tecnologias:</strong> <span>HTML</span> <span>CSS</span> <span>JavaScript</span></div>
                 <a href="https://github.com/leandrofepi/front-end-labs/tree/main/virtual-phone" target="_blank" class="project-link">Ver Projeto</a>
             </div>
         </div>
+
+        <section class="course-topics">
+            <h2>Tópicos Abordados na Disciplina</h2>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <h3>1. Fundamentos de HTML</h3>
+                    <ul>
+                        <li>Estruturação de Páginas Semânticas</li>
+                        <li>Criação de Formulários Interativos</li>
+                        <li>Organização de Conteúdo e Mídia</li>
+                    </ul>
+                </div>
+                <div class="topic-card">
+                    <h3>2. Estilização com CSS</h3>
+                    <ul>
+                        <li>Box Model e Estilização de Elementos</li>
+                        <li>Layouts Modernos (Flexbox/Grid)</li>
+                        <li>Seletores e Efeitos Visuais</li>
+                    </ul>
+                </div>
+                <div class="topic-card">
+                    <h3>3. Interatividade com JavaScript</h3>
+                    <ul>
+                        <li>Manipulação Dinâmica do DOM</li>
+                        <li>Gerenciamento de Eventos do Usuário</li>
+                        <li>Criação de Interfaces Interativas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <footer>
         <p>&copy; <span id="currentYear"></span> Prof. Leandro Duarte - Laboratórios de Front-End.</p>
+        <p class="footer-credit">Esta página foi desenvolvida com auxílio do Gemini.</p>
     </footer>
 
     <script>
