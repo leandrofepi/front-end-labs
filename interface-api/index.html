@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta API GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="git_id">User GitHub: </label>
+    <input type="text" id="git_id">
+    <button>
+        <span>🔎</span>
+    </button>
+    <main class="tabela">
+        <div class="rotulo-coluna">Name</div>
+        <div class="rotulo-coluna">Bio</div>
+        <div class="rotulo-coluna">Followers</div>
+        <div class="rotulo-coluna">Location</div>
+        <div class="rotulo-coluna">Avatar</div>
+
+        <div class="celula" id="name"></div>
+        <div class="celula" id="bio"></div>
+        <div class="celula" id="followers"></div>
+        <div class="celula" id="location"></div>
+        <div class="celula">
+            <img id="avatar">
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
